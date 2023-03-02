@@ -1,13 +1,15 @@
+import org.postgresql.Driver;
+
 import java.util.Scanner;
-import java.util.Date;
 
 public class Main {
     public static void main(String[] args) {
+        Driver driver = new Driver();
+
 
         Scanner scanner = new Scanner(System.in);
 
         while (true) {
-
             Menu.menu();
             String i = scanner.nextLine();
             if (i.equals("1") | i.equals("продажа")  | i.equals("Продажа")) {
